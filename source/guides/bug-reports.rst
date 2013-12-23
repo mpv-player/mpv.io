@@ -39,9 +39,9 @@ Mind the config
 
 - If ``--no-config`` removes the buggy behaviour, the bug is triggered by a 
   particular set of options. Work your way through your config the config file
-  and ad the options manually one-by-one _together_ with ``--no-config`` until
-  you find the smallest set of options that triggers the bug. In your bug
-  report you then have to include this ``./mpv [options] file`` call.
+  and add the options manually one-by-one _together_ with ``--no-config`` until
+  you find the smallest set of options that triggers the bug. Include the
+  ``./mpv [options] file`` command in your bug report.
 
 Bugs related to specific files and formats:
 ===========================================
