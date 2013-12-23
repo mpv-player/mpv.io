@@ -1,0 +1,59 @@
+.main-content
+  .container
+    %h1
+      %i.fa.fa-comments
+      Community
+      %small and contacts
+
+    %p
+      There are several ways by which you can engage with the mpv community
+      of users and developers. Here's the complete list:
+
+    %table.table.table-condensed
+      %tr
+        %td(colspan="3")
+          %h3
+            %i.fa.fa-terminal
+            Internet Relay Chat
+
+      %tr
+        %td Users channel
+        %td(colspan="2")
+          = link_to '#mpv-player on irc.freenode.net', 'irc://irc.freenode.net/mpv-player'
+
+      %tr
+        %td
+          Development channel
+          %small (please stay in topic or suffer the consequences)
+        %td(colspan="2")
+          = link_to '#mpv-player-dev on irc.freenode.net', 'irc://irc.freenode.net/mpv-player-dev'
+
+      %tr
+        %td(colspan="3")
+          %h3
+            %i.fa.fa-pencil
+            Mailing lists
+
+      %tr
+        %td Users Mailing List
+        %td= link_to 'mpv-users@googlegroups.com', 'mailto:mpv-users@googlegroups.com'
+        %td= link_to 'Archive / Subscribe', 'https://groups.google.com/forum/?hl=en#!forum/mpv-users'
+      %tr
+        %td Devel Mailing List
+        %td= link_to 'mpv-devel@googlegroups.com', 'mailto:mpv-devel@googlegroups.com'
+        %td= link_to 'Archive / Subscribe', 'https://groups.google.com/forum/?hl=en#!forum/mpv-devel'
+
+
+      %tr
+        %td(colspan="3")
+          %h3
+            %i.fa.fa-pencil
+            Team's e-mail
+
+          %p
+            If you write to this e-mail only members of the mpv team will be able
+            to read it. Please use it only for comunications that must be private.
+
+      %tr
+        %td mpv team e-mail
+        %td= link_to 'mpv-team@googlegroups.com', 'mailto:mpv-team@googlegroups.com'

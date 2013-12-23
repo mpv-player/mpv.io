@@ -1,0 +1,31 @@
+!!!
+%html
+  %head
+    %meta(charset="utf-8")
+    %meta(content="IE=edge,chrome=1" http-equiv="X-UA-Compatible")
+    %link(rel="icon" type="image/png" href="/images/favicon.png")
+    %title= current_page.data.title || "mpv.io"
+
+    = stylesheet_link_tag "all"
+    =# javascript_include_tag  "all"
+
+    /[if lt IE 9]
+      / fixes for internet exploder < 9.0
+      %script(src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js")
+      %script(src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js")
+
+  %body{class: page_classes}
+    = partial "layouts/navbar"
+    = yield
+
+    %footer
+      .container
+        %small.pull-left.text-muted.copyright
+          &copy; 2012-2013 mpv.io
+
+        .social-icons.pull-right
+          = link_to github_path, target: :_blank do
+            %i.fa.fa-github-alt
+
+          = link_to twitter_path, target: :_blank do
+            %i.fa.fa-twitter

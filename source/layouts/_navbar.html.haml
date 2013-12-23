@@ -1,0 +1,24 @@
+.navbar.navbar-inverse.navbar-static-top{role: "navigation"}
+  .container
+    / .navbar-header
+    /   - if current_page.url != "/"
+    /     %a.hidden-xs.navbar-brand{href: "/"}
+    /       = image_tag "mpv-logo-128.png", width: "40px", height: "40px"
+    .pull-right
+      %ul.nav.navbar-nav
+        %li
+          = link_to installation_path do
+            %i.fa.fa-cloud-download
+            Installation
+        %li
+          = link_to guides_path do
+            %i.fa.fa-book
+            Guides
+        %li
+          = link_to bug_reports_path do
+            %i.fa.fa-bug
+            Bug Reports
+        %li
+          = link_to community_path do
+            %i.fa.fa-comments
+            Community

@@ -1,0 +1,32 @@
+.main-content
+  .container
+    %h1
+      %i.fa.fa-book
+      User guides
+
+    %p
+      These guides can be useful for just about any user of the player.
+
+    - fetch_guides("user-guide").each do |guide|
+      .row
+        = link_to guide_path(guide) do
+          .hidden-xs.hidden-sm.col-md-1.top-pad
+            %i.circle.fa{class: "fa-#{guide.data.icon}"}
+          .col-md-11
+            %h3= guide.data.title
+            %p= guide.data.abstract
+
+    %hr
+
+    %h1
+      %i.fa.fa-book
+      Technical guides
+
+    - fetch_guides("devel-guide").each do |guide|
+      .row
+        = link_to guide_path(guide) do
+          .hidden-xs.hidden-sm.col-md-1.top-pad
+            %i.circle.fa{class: "fa-#{guide.data.icon}"}
+          .col-md-11
+            %h3= guide.data.title
+            %p= guide.data.abstract

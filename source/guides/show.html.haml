@@ -1,0 +1,16 @@
+.main-content
+  .container
+    %ol.breadcrumb.pull-right
+      %li
+        = link_to '/' do
+          %i.fa.fa-home
+      %li= link_to "Guides", guides_path
+      %li.active
+        = guide.data.title
+
+    %h1
+      %i.fa{class: "fa-#{guide.data.icon}"}
+      = guide.data.title
+
+    :plain
+      #{render_rst(guide)}

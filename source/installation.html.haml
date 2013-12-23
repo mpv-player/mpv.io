@@ -1,0 +1,97 @@
+.main-content
+  .container
+    %h1
+      %i.fa.fa-cloud-download
+      Installation
+
+    %table.table.table-condensed
+      %tr
+        %td(colspan="2")
+          %h3
+            %i.fa.fa-terminal
+              Source code
+          %p
+            If you want bleeding edge functionality, to link against git versions
+            of FFmpeg or if a package for your platform is not available or
+            updated, you can build mpv from source code. The helper build
+            scripts are recommended for most users since they perform a static
+            build of FFmpeg and libass as well as mpv.
+
+      = package_row 'git repository', 'https://github.com/mpv-player/mpv/', :"github-alt"
+      = package_row 'Latest stable release tarball', 'https://github.com/mpv-player/mpv/releases/latest', :"github-alt"
+      = package_row 'Helper build scripts for *nix systems', 'https://github.com/mpv-player/mpv-build', :"github-alt"
+
+
+      %tr
+        %td(colspan="2")
+          %h3
+            %i.fa.fa-linux
+              GNU/Linux packages
+
+      = package_row 'Alpine (testing)', 'http://git.alpinelinux.org/cgit/aports/tree/testing/mpv'
+      = package_row 'Arch (official i686)', 'https://www.archlinux.org/packages/community/i686/mpv/'
+      = package_row 'Arch (aur, git package)', 'https://aur.archlinux.org/packages/mpv-git/'
+      = package_row 'Arch (aur, mpv-build package)', 'https://aur.archlinux.org/packages/mpv-build-git/'
+      = package_row 'Debian testing', 'http://packages.debian.org/jessie/mpv'
+      = package_row 'Debian unstable', 'http://packages.debian.org/sid/mpv'
+      = package_row 'Exherbo', 'http://git.exherbo.org/summer/packages/media/mpv/index.html'
+      = package_row 'Gentoo', 'http://packages.gentoo.org/package/media-video/mpv'
+      = package_row 'OpenSUSE (packman)', 'http://packman.links2linux.de/package/mpv'
+      = package_row 'Ubuntu (PPA by blinxwang)', 'https://launchpad.net/~blinxwang/+archive/mpv-builds'
+
+      %tr
+        %td(colspan="2")
+          %h3
+            %i.fa.fa-apple
+              OS X
+
+      = package_row 'Homebrew', 'https://github.com/mpv-player/homebrew-mpv'
+      = package_row 'Fink', 'http://pdb.finkproject.org/pdb/package.php/mpv'
+      = package_row '64-bit binaries (by ChrisK) [OS X 10.8+]',
+                    'http://sva.wakku.to/~chris/mpv_builds/mpv_latest.zip',
+                    :"cloud-download"
+
+      %tr
+        %td(colspan="2")
+          %h3
+            %i.fa.fa-windows
+            Windows
+
+      = package_row 'Cross compile', 'https://github.com/lachs0r/mingw-w64-cmake'
+      = package_row '32-bit binaries (by lachs0r)',
+                    'http://mpv.srsfckn.biz/mpv-i686-latest.7z',
+                    :"cloud-download"
+      = package_row '64-bit binaries (by lachs0r)',
+                    'http://mpv.srsfckn.biz/mpv-x86_64-latest.7z',
+                    :"cloud-download"
+
+      %tr
+        %td(colspan="2")
+          %h3
+            Other platforms
+
+      = package_row 'FreeBSD (Freshports)', 'http://www.freshports.org/multimedia/mpv/'
+      = package_row 'OpenIndiana / illumos', 'http://pkg.openindiana.org/sfe-encumbered/en/catalog.shtml '
+
+    %p
+      Do you know of a package that is missing?
+      = succeed "." do
+        = link_to "Write us about it", "https://github.com/mpv-player/mpv-player/issues/new?title=Package missing"
+
+.next-steps
+  .container
+    %h2 Installed successfully?
+    %hr
+    .row
+      .col-xs-4
+        = link_to getting_started_path, class: "composite" do
+          %i.fa.fa-book.big-circle
+          %h3 Getting started guide
+      .col-xs-4
+        = link_to community_path, class: "composite" do
+          %i.fa.fa-comments.big-circle
+          %h3 Community
+      .col-xs-4
+        = link_to github_path, class: "composite" do
+          %i.fa.fa-bug.big-circle
+          %h3 Nope (Report a bug)
