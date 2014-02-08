@@ -66,7 +66,7 @@ end
 
 ready do
   fetch_guides.each do |guide|
-    proxy guide_path(guide), "guides/show.html", locals: {guide: guide}
+    proxy guide_path(guide) + "/index.html", "guides/show.html", locals: {guide: guide}
   end
 end
 

@@ -131,7 +131,7 @@ declarations (option names, types, and ``MPOpts`` offsets for the option parser)
 are in ``options.c``. Most default values for options and ``MPOpts`` are in
 ``mp_default_opts`` at the end of ``options.c``.
 
-``MPOpts`` is unfortunarely quite monolithic, and virtually accessed by
+``MPOpts`` is unfortunately quite monolithic, and virtually accessed by
 everything. But some components (like video outputs and video filters) have
 their own sub-option tables separate from ``MPOpts``.
 
@@ -143,7 +143,7 @@ The actual option parser is spread over ``m_option.c``, ``m_config.c``, and
 
 This translates keyboard input coming from libvo and other sources (such
 as remote control devices like Apple IR or slave mode commands) to the
-key bindings listed in the user's (or the builtin) ``input.conf`` and turns
+key bindings listed in the user's (or the built-in) ``input.conf`` and turns
 them into items of type ``struct mp_cmd``. These commands are queued, and read
 by ``playloop.c``. They get pushed with ``run_command()`` to ``command.c``.
 

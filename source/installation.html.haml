@@ -11,7 +11,7 @@
             %i.fa.fa-terminal
               Source code
           %p
-            If you want bleeding edge functionality, to link against git versions
+            If you want bleeding edge functionality, link against git versions
             of FFmpeg or if a package for your platform is not available or
             updated, you can build mpv from source code. The helper build
             scripts are recommended for most users since they perform a static
@@ -47,7 +47,7 @@
 
       = package_row 'Homebrew', 'https://github.com/mpv-player/homebrew-mpv'
       = package_row 'Fink', 'http://pdb.finkproject.org/pdb/package.php/mpv'
-      = package_row '64-bit binaries (by ChrisK) [OS X 10.8+]',
+      = package_row '64-bit binary (by ChrisK) [OS X 10.8+]',
                     'http://sva.wakku.to/~chris/mpv_builds/mpv_latest.zip',
                     :"cloud-download"
 
@@ -58,10 +58,10 @@
             Windows
 
       = package_row 'Cross compile', 'https://github.com/lachs0r/mingw-w64-cmake'
-      = package_row '32-bit binaries (by lachs0r)',
+      = package_row '32-bit binary (by lachs0r)',
                     'http://mpv.srsfckn.biz/mpv-i686-latest.7z',
                     :"cloud-download"
-      = package_row '64-bit binaries (by lachs0r)',
+      = package_row '64-bit binary (by lachs0r)',
                     'http://mpv.srsfckn.biz/mpv-x86_64-latest.7z',
                     :"cloud-download"
 
@@ -92,6 +92,6 @@
           %i.fa.fa-comments.big-circle
           %h3 Community
       .col-xs-4
-        = link_to github_path, class: "composite" do
+        = link_to bug_reports_path, class: "composite" do
           %i.fa.fa-bug.big-circle
           %h3 Nope (Report a bug)
