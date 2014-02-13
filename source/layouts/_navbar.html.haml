@@ -1,9 +1,12 @@
 .navbar.navbar-inverse.navbar-static-top{role: "navigation"}
   .container
-    / .navbar-header
-    /   - if current_page.url != "/"
-    /     %a.hidden-xs.navbar-brand{href: "/"}
-    /       = image_tag "mpv-logo-128.png", width: "40px", height: "40px"
+    .navbar-header
+      - unless homepage?
+        %a.hidden-xs.navbar-brand{href: "/"}
+          = image_tag "mpv-logo-128.png", width: "40px", height: "40px"
+          %span.title mpv
+          %i.fa.fa-home
+
     .pull-right
       %ul.nav.navbar-nav
         %li{nav_class(installation_path)}
