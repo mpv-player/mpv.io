@@ -43,6 +43,10 @@ helpers do
     end
   end
 
+  def homepage?
+    current_page.url == "/"
+  end
+
   def package_row(title, url, icon=:globe)
     content_tag(:tr, class: 'package-row') do
       content_tag(:td, title) +
