@@ -16,7 +16,7 @@ helpers do
   end
 
   def bug_reports_path
-    "/guides/bug-reports"
+    "/bug-reports"
   end
 
   def community_path
@@ -35,6 +35,14 @@ helpers do
     "https://github.com/mpv-player/mpv/issues"
   end
 
+  def nav_class(path)
+    if /^#{path}/ =~ current_page.url
+      {:class => 'selected'}
+    else
+      {}
+    end
+  end
+
   def package_row(title, url, icon=:globe)
     content_tag(:tr, class: 'package-row') do
       content_tag(:td, title) +
@@ -47,14 +55,14 @@ helpers do
     end
   end
 
-  def fetch_guides(doctype=nil)
+  def fetch_pages(doctype=nil)
     query = sitemap
     query = query.where(:doctype.equal => doctype) if doctype.present?
     query.order_by(:order).all
   end
 
-  def guide_path(guide, ext=".rst")
-    File.join(guides_path, File.basename(guide.path, ext))
+  def rst_page_path(page, ext=".rst")
+    File.join(File.dirname(page.url), File.basename(page.url, ext), "index.html")
   end
 
   def render_rst(guide)
@@ -65,9 +73,11 @@ helpers do
 end
 
 ready do
-  fetch_guides.each do |guide|
-    proxy guide_path(guide) + "/index.html", "guides/show.html", locals: {guide: guide}
+  fetch_pages.each do |page|
+    proxy rst_page_path(page), "rst-page.html", locals: {page: page}
   end
+
+  ignore 'rst-page.html.haml'
 end
 
 set :css_dir,    'stylesheets'

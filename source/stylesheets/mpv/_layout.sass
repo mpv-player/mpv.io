@@ -43,3 +43,14 @@ footer
 
 .table .package-row span
   margin-left: 0.7em
+
+.nav.navbar-nav li.selected
+  position: relative
+  &::after
+    content: " "
+    display: block
+    position: absolute
+    bottom: 0px
+    height: 5px
+    width: 100%
+    background-color: $navbar-inverse-selected-color

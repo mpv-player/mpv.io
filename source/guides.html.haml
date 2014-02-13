@@ -7,9 +7,9 @@
     %p
       These guides can be useful for just about any user of the player.
 
-    - fetch_guides("user-guide").each do |guide|
+    - fetch_pages("user-guide").each do |guide|
       .row
-        = link_to guide_path(guide) do
+        = link_to rst_page_path(guide) do
           .hidden-xs.hidden-sm.col-md-1.top-pad
             %i.circle.fa{class: "fa-#{guide.data.icon}"}
           .col-md-11
@@ -22,9 +22,9 @@
       %i.fa.fa-book
       Technical guides
 
-    - fetch_guides("devel-guide").each do |guide|
+    - fetch_pages("devel-guide").each do |guide|
       .row
-        = link_to guide_path(guide) do
+        = link_to rst_page_path(guide) do
           .hidden-xs.hidden-sm.col-md-1.top-pad
             %i.circle.fa{class: "fa-#{guide.data.icon}"}
           .col-md-11

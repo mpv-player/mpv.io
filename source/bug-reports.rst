@@ -1,6 +1,5 @@
 ---
 title: Bug reports
-doctype: user-guide
 icon: bug
 abstract: "This document explains how to report bugs to mpv developers."
 order: 60

@@ -1,0 +1,8 @@
+.main-content
+  .container
+    %h1
+      %i.fa{class: "fa-#{page.data.icon}"}
+      = page.data.title
+
+    :plain
+      #{render_rst(page)}

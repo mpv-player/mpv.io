@@ -6,19 +6,19 @@
     /       = image_tag "mpv-logo-128.png", width: "40px", height: "40px"
     .pull-right
       %ul.nav.navbar-nav
-        %li
+        %li{nav_class(installation_path)}
           = link_to installation_path do
             %i.fa.fa-cloud-download
             Installation
-        %li
+        %li{nav_class(guides_path)}
           = link_to guides_path do
             %i.fa.fa-book
             Guides
-        %li
+        %li{nav_class(bug_reports_path)}
           = link_to bug_reports_path do
             %i.fa.fa-bug
             Bug Reports
-        %li
+        %li{nav_class(community_path)}
           = link_to community_path do
             %i.fa.fa-comments
             Community
