@@ -4,6 +4,8 @@ rvm:
 branches:
   only:
   - master
+install:
+- "pip install docutils"
 script: rake travis
 env:
   global:
