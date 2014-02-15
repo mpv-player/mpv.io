@@ -11,7 +11,7 @@ task :travis do
   system [
     "cd build",
     "git add -A .",
-    "git commit --author='#{ENV['GIT_NAME']} <#{ENV['GIT_EMAIL']}>' -m 'travis autodeploy #{ENV['TRAVIS_COMMIT_RANGE']}'",
+    "git commit --author='nadeko <nadeko@travis>' -m 'travis autodeploy #{ENV['TRAVIS_COMMIT_RANGE']}'",
     "git push origin master" ].join(" && ")
   File.delete 'build/.git/credentials'
 end
