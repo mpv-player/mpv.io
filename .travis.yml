@@ -6,7 +6,7 @@ branches:
   - master
 install:
 script:
-- virtualenv -p python2.7
+- source ~/virtualenv/python2.7/bin/activate
 - pip install docutils
 - rake travis
 env:
