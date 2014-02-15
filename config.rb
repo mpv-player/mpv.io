@@ -64,24 +64,6 @@ helpers do
     query = query.where(:doctype.equal => doctype) if doctype.present?
     query.order_by(:order).all
   end
-
-  def rst_page_path(page, ext=".rst")
-    File.join(File.dirname(page.url), File.basename(page.url, ext), "index.html")
-  end
-
-  def render_rst(guide)
-    # guide.render removes the middleman front matter and returns the actual
-    # content since '.rst' is not a registered template engine within middleman
-    GitHub::Markup.render(guide.path, guide.render)
-  end
-end
-
-ready do
-  fetch_pages.each do |page|
-    proxy rst_page_path(page), "rst-page.html", locals: {page: page}
-  end
-
-  ignore 'rst-page.html.haml'
 end
 
 set :css_dir,    'stylesheets'

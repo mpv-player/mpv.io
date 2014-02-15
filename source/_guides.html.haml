@@ -9,7 +9,7 @@
 
     - fetch_pages("user-guide").each do |guide|
       .row
-        = link_to rst_page_path(guide) do
+        = link_to md_page_path(guide) do
           .hidden-xs.hidden-sm.col-md-1.top-pad
             %i.circle.fa{class: "fa-#{guide.data.icon}"}
           .col-md-11
@@ -24,7 +24,7 @@
 
     - fetch_pages("devel-guide").each do |guide|
       .row
-        = link_to rst_page_path(guide) do
+        = link_to md_page_path(guide) do
           .hidden-xs.hidden-sm.col-md-1.top-pad
             %i.circle.fa{class: "fa-#{guide.data.icon}"}
           .col-md-11

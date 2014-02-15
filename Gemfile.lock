@@ -48,7 +48,6 @@ GEM
       multi_json (~> 1.0)
       net-http-persistent (>= 2.7)
       net-http-pipeline
-    github-markup (1.0.0)
     haml (4.0.4)
       tilt
     highline (1.6.20)
@@ -159,7 +158,6 @@ DEPENDENCIES
   bootstrap-sass
   capistrano (~> 2.15.5)
   font-awesome-middleman
-  github-markup
   middleman (~> 3.2.1)
   middleman-livereload (~> 3.1.0)
   travis
