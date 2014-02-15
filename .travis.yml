@@ -5,8 +5,10 @@ branches:
   only:
   - master
 install:
-- "pip install docutils"
-script: rake travis
+script:
+- virtualenv -p python2.7
+- pip install docutils
+- rake travis
 env:
   global:
   - secure: 6w88tCh1X5mqk10FFBgoW4kgqnUCC1ZItdsQaBzoK9kwz4DNivUdIzNbRGjecg64Kkiz5PCn88P5844vqqTBWtgqX+StJrE4EzMmupUQXHUejkpIkWyI6ugFHBKrL609puzzL3Nx3O2qB2rZIZOOrr06rdyDRgOG62Sjn6uZHMI=
