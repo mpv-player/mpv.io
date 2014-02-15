@@ -3,7 +3,6 @@ task :travis do
   # use public URL for clone
   system "git clone https://github.com/mpv-player/mpv-player.git build"
   system "bundle exec middleman build"
-  system "cd build && git remote set-url --push origin git@github.com:mpv-player/mpv-player.git"
   system "cd build && git config user.name 'nadeko'"
   system "cd build && git config user.email 'nadeko@travis'"
   system 'cd build && git config credential.helper "store --file=.git/credentials"'
