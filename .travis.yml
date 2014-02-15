@@ -6,4 +6,5 @@ branches:
     - master
 script: rake travis
 env:
-  - secure: "bnhkR1NBn5wqy6jqyIjqhdzh4vH0NiCKTlHE+z8orwj+YLLiDhDOxZT06gAz38366MuqDAEaah4TTSIK5W5k1m2PsSZovoycDPlBy8huFPToKvkbv9qgFS9/1oMqfhvDBTz+ZXtBLtjUM1y5SxbV3SlVaeFEg0LjL1omKEPFG1U="
+  global:
+    - secure: YS4iu8XZ3Akk7luM6FrUUx8sHhnKm4CMec4bQV7JOUhDOEiqPdiO00tVzuSMI6QQJTuaZn/mWZmO6iVbZUUAXCH61kVonHJAPhN9fz06R7FuSYTJhYhA00JR48V74AtfDNIkcjowk0e/nZV8JiLn1P4TTIsYM3sLfV8NZ6hEXxs=
