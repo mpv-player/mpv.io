@@ -6,3 +6,4 @@ gem "bootstrap-sass"
 gem "font-awesome-middleman"
 gem "github-markup", require: 'github/markup'
 gem 'capistrano', "~> 2.15.5"
+gem "travis"
