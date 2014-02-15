@@ -6,8 +6,6 @@ branches:
   - master
 install:
 script:
-- source ~/virtualenv/python2.7/bin/activate
-- pip install docutils
 - rake travis
 env:
   global:
