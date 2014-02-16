@@ -1,11 +1,31 @@
 mpv.io
 ======
 
-This repository is used to generate our static website that is then deployed
-to the ``gh-pages`` branch and serveddirectly by GitHub.
+[![Build Status](https://travis-ci.org/mpv-player/mpv.io.png?branch=master)](https://travis-ci.org/mpv-player/mpv.io)
 
-Setup a development environment
--------------------------------
+Overview
+--------
+
+This repository is the source code to our website running at http://mpv.io.
+The website is hosted with GitHub Pages, and the compiled version is available
+on [this repository](https://github.com/mpv-player/mpv-player.github.io).
+
+The compiled version is automatically created and committed by TravisCI when
+changes are pushed to the master of this repository.
+
+Contributing
+------------
+
+To contribute you can just fork this website, make your changes and send pull
+requests. If you find errors but are unable to contribute
+[open a issue](https://github.com/mpv-player/mpv.io/issues/new).
+
+Setup a local development environment
+-------------------------------------
+
+The website is created using a static website generator called
+[Middleman](http://middlemanapp.com/). Here's what you need to do to get a
+copy of the website running on your local machine.
 
 - Optional: have ``rbenv`` or ``rvm`` installed. These tools will automatically
   select the correct version of ruby based on the ``.ruby-version`` file in
