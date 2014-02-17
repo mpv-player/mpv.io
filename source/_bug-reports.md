@@ -38,8 +38,13 @@ needed to properly isolate the bug.
   it works with `ffplay` or `avplay` compiled against the same FFmpeg
   or Libav version you compiled mpv against.
 
-- Include a sample that triggers the bug. You don't need to upload the entire
-  file. Generally, cutting a sample that triggers the problem is good enough.
+- Include a sample that triggers the bug. If the file is too large, you can try
+  cutting a sample to avoid uploading the entire file. Test whether the small
+  file still works and still triggers the problem.
+
+  Cutting the sample can sometimes cause the file not to work anymore (usually
+  the case for mp4), or the bug not to be triggered (e.g. when the bug is
+  related to seeking).
 
   To cut a sample you can use the `dd` UNIX command, like follows:
 
@@ -48,14 +53,15 @@ needed to properly isolate the bug.
   The above command will copy the first `block size (bs) x count` bytes of
   the input file (`if`) to the output file (`of`).
 
-  Cutting the sample can sometimes cause the file not to work anymore (always
-  for mp4) or the bug not to be triggered.
-
   Unfortunately the mpv project doesn't have a private FTP to host files since
   it would cost money, so you will have to host the file on a server of yours.
   Using a hosting service is also ok but make sure it doesn't need people to
   queue in order to download stuff (Dropbox and datafilehost.com are
   recommended).
+  
+  If the bug can be triggered with ffmpeg/ffplay/avconv/avplay, you can upload
+  the sample to the ffmpeg samples FTP. See http://ffmpeg.org/bugreports.html.
+  
 
 ### Crashes / Segmentation faults
 
@@ -82,7 +88,8 @@ needed to properly isolate the bug.
 
 ### Timing bugs / mpv hangs at last frame
 
-- Are you using `ao_pulse`? If so it's probably PulseAudio's fault :)
+- Try using a different audio output. You can list available audio output
+  drivers with `--ao=help` and use them e.g. with `--ao=alsa`.
 
 ### mpv hangs after pausing
 
