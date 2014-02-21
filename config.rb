@@ -53,7 +53,7 @@ helpers do
       content_tag(:td) do
         link_to url do
           content_tag(:i, "", class: "fa fa-#{icon}") +
-          content_tag(:span, url)
+          content_tag(:span) { url }
         end
       end
     end
