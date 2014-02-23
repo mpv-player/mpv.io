@@ -48,15 +48,7 @@ helpers do
   end
 
   def package_row(title, url, icon=:globe)
-    content_tag(:tr, class: 'package-row') do
-      content_tag(:td, title) +
-      content_tag(:td) do
-        link_to url do
-          content_tag(:i, "", class: "fa fa-#{icon}") +
-          content_tag(:span) { url }
-        end
-      end
-    end
+    partial("package-row", locals: { title: title, url: url, icon: icon })
   end
 
   def fetch_pages(doctype=nil)
