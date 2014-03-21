@@ -80,7 +80,7 @@ needed to properly isolate the bug.
 
 ### Regressions / functionality that once worked:
 
-- Please provide the a git commit from the past (or a mpv version in case of
+- Please provide a git commit from the past (or a mpv version in case of
   stable releases) where you recall the functionality used to work correctly.
 
 - BONUS: If you want to be extra nice you can perform a binary search with
