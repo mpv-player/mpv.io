@@ -27,7 +27,7 @@ needed to properly isolate the bug.
   to use the `--no-config` CLI option before reporting.
 
 - If `--no-config` removes the buggy behavior, the bug is triggered by a 
-  particular set of options. Work your way through your config the config file
+  particular set of options. Work your way through your config file
   and add the options manually one-by-one _together_ with `--no-config` until
   you find the smallest set of options that triggers the bug. Include the
   `./mpv [options] file` command in your bug report.
