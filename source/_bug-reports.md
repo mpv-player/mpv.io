@@ -27,7 +27,7 @@ needed to properly isolate the bug.
   to use the `--no-config` CLI option before reporting.
 
 - If `--no-config` removes the buggy behavior, the bug is triggered by a 
-  particular set of options. Work your way through your config the config file
+  particular set of options. Work your way through your config file
   and add the options manually one-by-one _together_ with `--no-config` until
   you find the smallest set of options that triggers the bug. Include the
   `./mpv [options] file` command in your bug report.
@@ -80,7 +80,7 @@ needed to properly isolate the bug.
 
 ### Regressions / functionality that once worked:
 
-- Please provide the a git commit from the past (or a mpv version in case of
+- Please provide a git commit from the past (or a mpv version in case of
   stable releases) where you recall the functionality used to work correctly.
 
 - BONUS: If you want to be extra nice you can perform a binary search with
