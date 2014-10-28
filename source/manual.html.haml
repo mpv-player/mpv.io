@@ -16,14 +16,19 @@ title: Reference manual
       %tr
         %td(colspan="2")
           %h3
+            %i.fa.fa-code-fork
             Git master
 
       %tr
         %td PDF-rendering (might be out of date by some days)
         %td(colspan="2")
-          = link_to 'PDF', 'http://mpv.srsfckn.biz/manual.pdf'
+          = link_to 'http://mpv.srsfckn.biz/manual.pdf' do
+            %i.fa.fa-file-pdf-o
+            PDF
 
       %tr
         %td Github-rendering (often somewhat broken)
         %td(colspan="2")
-          = link_to 'PDF', 'https://github.com/mpv-player/mpv/tree/master/DOCS/man'
+          = link_to 'https://github.com/mpv-player/mpv/tree/master/DOCS/man' do
+            %i.fa.fa-file-code-o
+            HTML
