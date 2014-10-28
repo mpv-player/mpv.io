@@ -17,6 +17,10 @@
         /   = link_to guides_path do
         /     %i.fa.fa-book
         /     Guides
+        %li{nav_class(manual_path)}
+          = link_to manual_path do
+            %i.fa.fa-book
+            Reference
         %li{nav_class(bug_reports_path)}
           = link_to bug_reports_path do
             %i.fa.fa-bug
