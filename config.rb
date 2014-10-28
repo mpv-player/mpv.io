@@ -23,6 +23,10 @@ helpers do
     "/community"
   end
 
+  def manual_path
+    "/manual"
+  end
+
   def github_path
     "https://github.com/mpv-player/mpv"
   end
