@@ -85,14 +85,3 @@ needed to properly isolate the bug.
 
 - BONUS: If you want to be extra nice you can perform a binary search with
   `git bisect` to find the exact commit that broke this functionality.
-
-### Timing bugs / mpv hangs at last frame
-
-- Try using a different audio output. You can list available audio output
-  drivers with `--ao=help` and use them e.g. with `--ao=alsa`.
-
-### mpv hangs after pausing
-
-- Are you using Mesa drivers and `vo_vdpau`? If so it's a problem in Mesa's
-  implementation of the VDPAU presentation queue. You can workaround this
-  problem with `--vo=vdpau:fps=-1`.
