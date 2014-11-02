@@ -1,7 +1,7 @@
 ### Issue tracker
 
 The issue tracker is located on [GitHub](https://github.com/mpv-player/mpv/issues).
-Report bugs and feature requests there.
+Report bugs and feature requests there. You can also ask on the IRC channel.
 
 Please provide enough information so that the bug can be reproduced without
 much trouble. Also include any details that could help us hunt down the bug.
