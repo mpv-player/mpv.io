@@ -48,7 +48,7 @@ needed to properly isolate the bug.
 
   To cut a sample you can use the `dd` UNIX command, like follows:
 
-    dd if=sample-file of=small-sample-file bs=1024 count=10000
+    `dd if=sample-file of=small-sample-file bs=1024 count=10000`
 
   The above command will copy the first `block size (bs) x count` bytes of
   the input file (`if`) to the output file (`of`).
