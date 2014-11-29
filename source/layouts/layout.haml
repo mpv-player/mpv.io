@@ -7,7 +7,7 @@
     %title= [ "mpv.io", current_page.data.title ].compact.join(" | ")
 
     = stylesheet_link_tag "all"
-    =# javascript_include_tag  "all"
+    = javascript_include_tag "all"
 
   %body{class: page_classes}
     = partial "layouts/navbar"
@@ -25,4 +25,4 @@
           = link_to twitter_path, target: :_blank do
             %i.fa.fa-twitter
 
-    = partial "layouts/tracking"
+    =# partial "layouts/tracking"

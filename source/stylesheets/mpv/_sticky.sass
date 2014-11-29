@@ -1,0 +1,37 @@
+.manual-navigation
+  padding: 0px
+
+.sticky
+  width: 285px
+  overflow-y: auto
+  height: calc(100vh - 108px)
+
+  &.sticked
+    position: fixed
+    top: 10px
+    height: calc(100% - 20px)
+
+  ul
+    list-style-type: none
+    padding-left: 15px
+    display: none
+
+  ul.level-1
+    display: block
+    margin:  0
+    padding: 0
+
+  ul.active
+    display: block
+
+  li a
+    border-bottom: 1px solid $gray-vlightd
+    padding: 4px 8px
+    display: block
+
+  li a:hover
+    background: $gray-vlightd
+
+  li.active > a
+    background: $brand-primary
+    color: white
