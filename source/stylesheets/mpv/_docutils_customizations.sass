@@ -1,0 +1,26 @@
+.manual-container
+  .section > dl > dt
+    font-size: 15px
+    line-height: 20px
+
+  .section > dl > dd
+    margin-left: 25px
+
+  .section > dl > dd + dt
+    margin-top: 1em
+
+  .section blockquote
+    border-left: none
+
+  div.admonition, div.attention, div.caution, div.danger, div.error,
+  div.hint, div.important, div.note, div.tip, div.warning
+    border: 1px solid $gray-vlightd
+
+  .anchor
+    padding: 3px
+    border-radius: 50%
+    display: none
+
+  dt
+    &:hover .anchor
+      display: inline

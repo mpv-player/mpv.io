@@ -10,6 +10,11 @@
 # Ignore the build directory
 /build
 
+# Ignore stuff for manual generation
+/mpv
+/source/manual/_mpv.html
+/source/manual/_mpv.html.erb
+
 # Ignore Sass' cache
 /.sass-cache
 

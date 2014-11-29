@@ -4,7 +4,9 @@ rvm:
 branches:
   only:
   - master
-install:
+before_install:
+- source ~/virtualenv/python2.7/bin/activate
+- pip install docutils
 script:
 - rake travis
 env:

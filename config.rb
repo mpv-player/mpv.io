@@ -27,6 +27,10 @@ helpers do
     "/manual"
   end
 
+  def manual_git_master_path
+    "/manual/git-master"
+  end
+
   def github_path
     "https://github.com/mpv-player/mpv"
   end
