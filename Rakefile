@@ -12,12 +12,12 @@ task :build_mpv_manual do
   else
     system "git clone https://github.com/mpv-player/mpv.git mpv"
   end
-  [
+  system([
     rst2html,
     '--template=rst2html_template',
     'mpv/DOCS/man/mpv.rst',
     'source/manual/_mpv.html.erb'
-  ].join(' ')
+  ].join(' '))
 end
 
 desc 'Generate site from Travis CI and publish site to GitHub Pages'
