@@ -5,7 +5,7 @@ branches:
   only:
   - master
 before_install:
-- pip install docutils
+- sudo pip install docutils
 script:
 - rake travis
 env:
