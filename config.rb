@@ -27,8 +27,12 @@ helpers do
     "/manual"
   end
 
-  def manual_git_master_path
-    "/manual/git-master"
+  def manual_master_path
+    "/manual/master"
+  end
+
+  def manual_stable_path
+    "/manual/stable"
   end
 
   def github_path

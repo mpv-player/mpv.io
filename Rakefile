@@ -7,16 +7,23 @@ end
 
 desc "Builds mpv's manual"
 task :build_mpv_manual do
-  if File.exists?('mpv')
-    system "cd mpv && git pull origin master"
-  else
+  unless File.exists?('mpv')
     system "git clone https://github.com/mpv-player/mpv.git mpv"
   end
+  system("cd mpv && git checkout master && git pull origin master")
   system([
     rst2html,
     '--template=rst2html_template',
     'mpv/DOCS/man/mpv.rst',
-    'source/manual/_mpv.html.erb'
+    'source/manual/_master.html.erb'
+  ].join(' '))
+
+  system("cd mpv && git checkout $(git tag | tail -1)")
+  system([
+    rst2html,
+    '--template=rst2html_template',
+    'mpv/DOCS/man/mpv.rst',
+    'source/manual/_stable.html.erb'
   ].join(' '))
 end
 

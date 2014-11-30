@@ -22,7 +22,7 @@ title: Reference manual
       %tr
         %td HTML-rendering (updated daily)
         %td(colspan="2")
-          = link_to manual_git_master_path do
+          = link_to manual_master_path do
             %i.fa.fa-file-code-o
             HTML
 
@@ -32,3 +32,18 @@ title: Reference manual
           = link_to 'http://mpv.srsfckn.biz/manual.pdf', target: '_blank' do
             %i.fa.fa-file-pdf-o
             PDF
+
+      %tr
+        %td(colspan="2")
+          %h3
+            %i.fa.fa-floppy-o
+            Stable release (
+            = partial 'manual/stable_version.html.erb'
+            )
+
+      %tr
+        %td HTML-rendering (updated daily)
+        %td(colspan="2")
+          = link_to manual_stable_path do
+            %i.fa.fa-file-code-o
+            HTML
