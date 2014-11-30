@@ -18,6 +18,7 @@ task :build_mpv_manual do
     'source/manual/_master.html.erb'
   ].join(' '))
 
+  system("echo $(cd mpv && git tag | tail -1) > source/manual/_stable_version.html.erb")
   system("cd mpv && git checkout $(git tag | tail -1)")
   system([
     rst2html,
