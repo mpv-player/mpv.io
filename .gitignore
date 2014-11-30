@@ -12,8 +12,8 @@
 
 # Ignore stuff for manual generation
 /mpv
-/source/manual/_mpv.html
-/source/manual/_mpv.html.erb
+/source/manual/_master.html.erb
+/source/manual/_stable.html.erb
 
 # Ignore Sass' cache
 /.sass-cache
