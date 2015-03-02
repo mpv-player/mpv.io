@@ -26,3 +26,12 @@ a:hover .big-circle, a:hover .circle
 
   h1
     color: $text-color-light
+
+// bootstrap includes normalize.css which has some problematic rules for
+// blockquotes that change the font size. Override them with inherit.
+blockquote
+  margin: 0
+  p
+    font-size: inherit
+    font-weight: inherit
+    line-height: inherit
