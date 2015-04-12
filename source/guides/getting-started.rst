@@ -14,9 +14,10 @@ binaries are available on Windows and OS X. mpv can also be compiled from
 source on most UNIX systems: it is reported to work on BSDs (FreeBSD, OpenBSD
 and NetBSD) and Solaris.
 
-For more info about Installing mpv check out the `related web page
-</installation>`_. Steps to compile the software are listed in mpv's and
+For more info about Installing mpv check out the `related web page`_. Steps to compile the software are listed in mpv's and
 mpv-build's READMEs.
+
+.. _related web page: http://mpv.io/installation
 
 Key bindings
 ============
@@ -91,6 +92,6 @@ unsurprisingly, you can use: ::
   mpv --vo=opengl-hq:help
 
 For example, if you want to use the X11 backend to generate windows, and a
-color profile that matches my display, you would use: ::
+color profile that matches your display, you would use: ::
 
   mpv --vo=opengl-hq:backend=x11:icc-profile=path/to/icc/profile.icc
