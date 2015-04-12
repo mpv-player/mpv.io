@@ -18,6 +18,12 @@ For more info about Installing mpv check out the `related web page
 </installation>`_. Steps to compile the software are listed in mpv's and
 mpv-build's READMEs.
 
+Key bindings
+============
+The key bindings can be found in the manpage. There's also a picture with all available key bindings and their actions:
+
+.. image:: https://raw.githubusercontent.com/mpv-player/random-stuff/master/key_bindings_chart/mpbindings.png
+
 Manpage
 =======
 
