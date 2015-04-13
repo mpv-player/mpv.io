@@ -112,15 +112,16 @@ title: Installation
     %h2 Installed successfully?
     %hr
     .row
-      // .col-xs-4
-      //   = link_to getting_started_path, class: "composite" do
-      //     %i.fa.fa-book.big-circle
-      //     %h3 Getting started guide
-      .col-xs-6
+      .col-xs-4
+        = link_to getting_started_path, class: "composite" do
+          %i.fa.fa-book.big-circle
+          %h3 Getting Started
+      .col-xs-4
         = link_to community_path, class: "composite" do
           %i.fa.fa-comments.big-circle
           %h3 Community
-      .col-xs-6
+      .col-xs-4
         = link_to bug_reports_path, class: "composite" do
           %i.fa.fa-bug.big-circle
           %h3 Nope (Report a bug)
+
