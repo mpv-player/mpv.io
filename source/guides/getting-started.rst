@@ -24,6 +24,10 @@ Key bindings
 The key bindings can be found in the manpage. There's also a picture with all available key bindings and their actions:
 
 .. image:: https://raw.githubusercontent.com/mpv-player/random-stuff/master/key_bindings_chart/mpbindings.png
+   :height: 373px
+   :width: 625px
+   :target: https://raw.githubusercontent.com/mpv-player/random-stuff/master/key_bindings_chart/mpbindings.png
+   :alt: mpv key bindings
 
 Manpage
 =======
