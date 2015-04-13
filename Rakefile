@@ -39,7 +39,7 @@ task :build_mpv_getting_started do
 end
 
 desc 'Generate site from Travis CI and publish site to GitHub Pages'
-task :travis => :build_mpv_manual do
+task :travis => [:build_mpv_manual, :build_mpv_getting_started] do
   # use public URL for clone
   system "git clone https://github.com/mpv-player/mpv-player.git build"
   system "bundle exec middleman build --verbose"
