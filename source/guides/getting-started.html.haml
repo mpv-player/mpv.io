@@ -1,5 +1,7 @@
 .main-content
   .container
     .row
-      .col-lg-12#manual.manual-container
+      .col-lg-4.gettingstarted-navigation.visible-lg
+        .sticky(data-sticky-offset="20" data-navigation-source="#gettingstarted")
+      .col-lg-8#gettingstarted.gettingstarted-container
         = partial 'guides/getting-started.html.erb'
