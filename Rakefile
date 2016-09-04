@@ -18,8 +18,8 @@ task :build_mpv_manual do
     'source/manual/_master.html.erb'
   ].join(' '))
 
-  system("echo $(cd mpv && git tag --sort=version:refname | tail -1) > source/manual/_stable_version.html.erb")
-  system("cd mpv && git checkout $(git tag --sort=version:refname | tail -1)")
+  system("echo $(cd mpv && git tag -l --contains $(git tag -l --contains $(git rev-list --tags --max-count=1 | head -c16) | tail -1 | head -c16)) > source/manual/_stable_version.html.erb")
+  system("cd mpv && git checkout $(git tag -l --contains $(git tag -l --contains $(git rev-list --tags --max-count=1 | head -c16) | tail -1 | head -c16))")
   system([
     rst2html,
     '--template=rst2html_template',
