@@ -14,6 +14,8 @@ task :build_mpv_manual do
   system([
     rst2html,
     '--template=rst2html_template',
+    '--strip-elements-with-class=contents',
+    '--no-toc-backlinks',
     'mpv/DOCS/man/mpv.rst',
     'source/manual/_master.html.erb'
   ].join(' '))
@@ -23,6 +25,8 @@ task :build_mpv_manual do
   system([
     rst2html,
     '--template=rst2html_template',
+    '--strip-elements-with-class=contents',
+    '--no-toc-backlinks',
     'mpv/DOCS/man/mpv.rst',
     'source/manual/_stable.html.erb'
   ].join(' '))
