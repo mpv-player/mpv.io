@@ -35,7 +35,7 @@ end
 desc 'Generate site from Travis CI and publish site to GitHub Pages'
 task :travis => :build_mpv_manual do
   # use public URL for clone
-  system "git clone https://github.com/mpv-player/mpv-player.git build"
+  system "git clone https://github.com/mpv-player/mpv-player.github.io.git build"
   system "bundle exec middleman build --verbose"
   system "cd build && git config user.name 'nadeko'"
   system "cd build && git config user.email 'nadeko@travis'"
