@@ -74,7 +74,7 @@ needed to properly isolate the bug.
     - Type `thread apply all backtrace` and include its result in your
       report.
 
-  On OS X if you are running the application bundle `mpv.app` the system
+  On macOS if you are running the application bundle `mpv.app` the system
   will automatically generate a backtrace among other user useful information
   as part of the "Crash Report". You can just paste that in that case.
 
