@@ -2,9 +2,10 @@
   .container
     %h1
       = image_tag "mpv-logo-128.png", width: "45", height: "45"
-      mpv
-    %p a free, open source, and cross-platform media player
-    = image_tag "mpv-screenshot.jpg", class: 'screenshot'
+      いつでもナンバー１
+    %p W-E-E-B-S U-N-I-T-E
+    .screenshot
+      %iframe{:allow => "autoplay; encrypted-media", :allowfullscreen => "", :frameborder => "0", :height => "340", :src => "https://www.youtube.com/embed/rSxyluY3npE", :width => "100%"}
 
 .main-content
   .container
@@ -12,13 +13,13 @@
 
 .next-steps
   .container
-    %h2 Here are a few places you may want to go next...
+    %h2 次
     %hr
     .row
       .col-xs-6
         = link_to installation_path, class: "composite" do
           %i.fa.fa-cloud-download.big-circle
-          %h3 Installation
+          %h3 インストールする
       // .col-xs-6
       //   = link_to getting_started_path, class: "composite" do
       //     %i.fa.fa-book.big-circle
@@ -26,4 +27,4 @@
       .col-xs-6
         = link_to github_path, class: "composite" do
           %i.fa.fa-github.big-circle
-          %h3 Source Code Repository
+          %h3 ソースコード
