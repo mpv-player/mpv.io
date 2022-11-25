@@ -20,15 +20,17 @@ title: Installation
           %p
             All binary packages are unofficial third-party builds.
 
+      = package_row 'Microsoft Store',
+                    'https://www.microsoft.com/store/productId/9P3JFR0CLLL6',
+                    :"cloud-download"
       = package_row 'Windows builds by shinchiro (releases and git)',
                     'https://sourceforge.net/projects/mpv-player-windows/files',
                     :"cloud-download"
-      = package_row 'Microsoft Store', 'https://www.microsoft.com/store/productId/9P3JFR0CLLL6'
-      = package_row 'Scoop', 'https://github.com/ScoopInstaller/Extras/blob/master/bucket/mpv.json'
-      = package_row 'Scoop (git)', 'https://github.com/ScoopInstaller/Extras/blob/master/bucket/mpv-git.json'
+      = package_row 'Scoop', 'https://scoop.sh/#/apps?q=mpv&s=0&d=1&o=true'
+      = package_row 'Scoop (git)', 'https://scoop.sh/#/apps?q=mpv-git&s=0&d=1&o=true'
       = package_row 'Chocolatey', 'https://chocolatey.org/packages/mpv'
       = package_row 'Compilation instructions', 'https://github.com/mpv-player/mpv/blob/master/DOCS/compile-windows.md'
-      = package_row 'MSYS2 source package', 'https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-mpv'
+      = package_row 'MSYS2 source package', 'https://github.com/msys2/MINGW-packages/blob/master/mingw-w64-mpv/PKGBUILD'
 
       %tr
         %td(colspan="2")
