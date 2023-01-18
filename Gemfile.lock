@@ -1,7 +1,7 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    activesupport (3.2.19)
+    activesupport (3.2.22.5)
       i18n (~> 0.6, >= 0.6.4)
       multi_json (~> 1.0)
     addressable (2.3.5)
@@ -100,7 +100,7 @@ GEM
       sprockets-helpers (~> 1.1.0)
       sprockets-sass (~> 1.0.0)
     mime-types (1.25.1)
-    multi_json (1.10.1)
+    multi_json (1.15.0)
     multipart-post (1.2.0)
     net-http-persistent (2.9.4)
     net-http-pipeline (1.0.1)
