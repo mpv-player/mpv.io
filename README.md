@@ -1,8 +1,6 @@
 mpv.io
 ======
 
-[![Build Status](https://travis-ci.org/mpv-player/mpv.io.png?branch=master)](https://travis-ci.org/mpv-player/mpv.io)
-
 Overview
 --------
 
@@ -10,7 +8,7 @@ This repository is the source code to our website running at http://mpv.io.
 The website is hosted with GitHub Pages, and the compiled version is available
 on [this repository](https://github.com/mpv-player/mpv-player.github.io).
 
-The compiled version is automatically created and committed by TravisCI when
+The compiled version is automatically created and committed by Github Actions when
 changes are pushed to the master of this repository.
 
 Contributing
