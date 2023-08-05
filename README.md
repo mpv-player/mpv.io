@@ -29,9 +29,9 @@ copy of the website running on your local machine.
 
 - Optional: have ``rbenv`` or ``rvm`` installed. These tools will automatically
   select the correct version of ruby based on the ``.ruby-version`` file in
-  our project root. Alternatively you can use any system Ruby that is > 1.9.
-- ``gem install bundler``
-- ``bundle install``
+  our project root. Alternatively you can use any system Ruby that is > 2.3.
+- ``gem install bundler -v 1.17.3``
+- ``bundle _1.17.3_ install``
 - ``rbenv rehash`` only if using ``rbenv``
 - ``[bundle exec] middleman server``
 - See the website running at: http://localhost:4567/
