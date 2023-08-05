@@ -6,25 +6,25 @@ Report bugs and feature requests there. You can also ask on the IRC channel.
 Please provide enough information so that the bug can be reproduced without
 much trouble. Also include any details that could help us hunt down the bug.
 Use your common sense for this: if it looks a platform specific bug, include
-you OS version; if it's a video display problem, include video card model
-and video driver type and version; etc.
+your OS version; if it's a video display problem, include GPU model, video
+driver type and version; etc.
 
 This guide goes on with recurring scenarios and which information might be
 needed to properly isolate the bug.
 
 ### Compilation failures
 
-- Paste the content of the `config.log` file that waf creates in the
-  `build` directory.
+- Paste the content of the `meson-logs/meson-log.txt` file that is created in
+  your build directory.
 
-- Paste the compilation error result from `./waf build` if you went past
+- Paste the compilation error result from `ninja` if you went past
   the configure step.
 
 ### Mind the config
 
 - Make sure it's actually a bug. A lot of times users forget they added
   something in their config file and think mpv is misbehaving. Always try
-  to use the `--no-config` CLI option before reporting.
+  to use the `--no-config` option before reporting.
 
 - If `--no-config` removes the buggy behavior, the bug is triggered by a 
   particular set of options. Work your way through your config file
@@ -35,8 +35,8 @@ needed to properly isolate the bug.
 ### Bugs related to specific files and formats:
 
 - If the bug is related to a particular format or container, make sure that
-  it works with `ffplay` or `avplay` compiled against the same FFmpeg
-  or Libav version you compiled mpv against.
+  it works with `ffplay` compiled against the same FFmpeg version you
+  compiled mpv against.
 
 - Include a sample that triggers the bug. If the file is too large, you can try
   cutting a sample to avoid uploading the entire file. Test whether the small
@@ -56,10 +56,9 @@ needed to properly isolate the bug.
   Unfortunately the mpv project doesn't have a private FTP to host files since
   it would cost money, so you will have to host the file on a server of yours.
   Using a hosting service is also ok but make sure it doesn't need people to
-  queue in order to download stuff (Dropbox and datafilehost.com are
-  recommended).
+  queue in order to download stuff.
   
-  If the bug can be triggered with ffmpeg/ffplay/avconv/avplay, you can upload
+  If the bug can be triggered with ffmpeg/ffplay, you can upload
   the sample to the ffmpeg samples FTP. See http://ffmpeg.org/bugreports.html.
   
 
