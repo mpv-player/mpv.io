@@ -35,7 +35,10 @@ end
 
 desc 'Generate site in CI and commit results'
 task :travis => :build_mpv_manual do
+  preserve = ['.git']
+  preserve.each { |x| File.rename "build/#{x}", "tmp_#{x}" }
   system "bundle exec middleman build --verbose"
+  preserve.each { |x| File.rename "tmp_#{x}", "build/#{x}" }
   system "cd build && git config user.name 'nadeko'"
   system "cd build && git config user.email 'nadeko@ci'"
   system [
