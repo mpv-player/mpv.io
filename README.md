@@ -14,10 +14,10 @@ changes are pushed to the master of this repository.
 Contributing
 ------------
 
-To contribute you have these possibilities
+To contribute you have these possibilities:
 - Fork this website, make your changes and send pull requests.
   - If you find errors but are unable to contribute then please [open a issue](https://github.com/mpv-player/mpv.io/issues/new).
-- Note: Changes to https://mpv.io/manual/master/ can be contributed in the mpv repo under this folder: https://github.com/mpv-player/mpv/tree/master/DOCS/man
+- Also see: [How to edit or extend the online manual](https://github.com/mpv-player/mpv#how-to-edit-or-extend-the-manual) which is handled entirely in the main "mpv" repo!
 
 Setup a local development environment
 -------------------------------------
