@@ -14,9 +14,10 @@ changes are pushed to the master of this repository.
 Contributing
 ------------
 
-To contribute you can just fork this website, make your changes and send pull
-requests. If you find errors but are unable to contribute
-[open a issue](https://github.com/mpv-player/mpv.io/issues/new).
+To contribute you have these possibilities:
+- Fork this website, make your changes and send pull requests.
+  - If you find errors but are unable to contribute then please [open a issue](https://github.com/mpv-player/mpv.io/issues/new).
+- Also see: [How to edit or extend the online manual](https://github.com/mpv-player/mpv#how-to-edit-or-extend-the-manual) which is handled entirely in the main "mpv" repo!
 
 Setup a local development environment
 -------------------------------------
