@@ -9,7 +9,7 @@ title: Installation
       Installation
 
     %p
-      Using git master is recommended.
+      It is recommended to use the latest version from the git master branch.
 
     %table.table.table-condensed
       %tr
@@ -18,16 +18,24 @@ title: Installation
             %i.fa.fa-windows
             Windows
           %p
-            All binary packages are unofficial third-party builds.
+            All binary packages are unofficial third-party builds, except for
+            those directly from mpv-player/mpv, which offers test builds
+            for each commit and pull request.
 
-      = package_row 'Windows builds by shinchiro (releases and git)',
-                    'https://sourceforge.net/projects/mpv-player-windows/files',
+      = package_row 'Windows builds by shinchiro (git)',
+                    'https://github.com/shinchiro/mpv-winbuild-cmake/releases',
                     :"cloud-download"
-      = package_row 'Scoop', 'https://github.com/lukesampson/scoop-extras/blob/master/bucket/mpv.json'
-      = package_row 'Scoop (git)', 'https://github.com/lukesampson/scoop-extras/blob/master/bucket/mpv-git.json'
+      = package_row 'Windows builds by zhongfly (git)',
+                    'https://github.com/zhongfly/mpv-winbuild/releases',
+                    :"cloud-download"
+      = package_row 'First-party test builds on GitHub Actions',
+                    'https://github.com/mpv-player/mpv/actions/workflows/build.yml?query=event:push+branch:master',
+                    :"cloud-download"
+      = package_row 'Scoop', 'https://scoop.sh/#/apps?q=mpv&id=b05b47128464d8969416289383fbfc69a47353e3'
+      = package_row 'Scoop (git)', 'https://scoop.sh/#/apps?q=mpv&id=72b493d66b164257cc87db56a4f581688afc13be'
       = package_row 'Chocolatey', 'https://chocolatey.org/packages/mpv'
+      = package_row 'MSYS2', 'https://packages.msys2.org/base/mingw-w64-mpv'
       = package_row 'Compilation instructions', 'https://github.com/mpv-player/mpv/blob/master/DOCS/compile-windows.md'
-      = package_row 'MSYS2 source package', 'https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-mpv'
 
       %tr
         %td(colspan="2")
@@ -35,8 +43,13 @@ title: Installation
             %i.fa.fa-apple
             macOS
           %p
-            Unofficial third-party builds.
+            All binary packages are unofficial third-party builds, except for
+            those directly from mpv-player/mpv, which offers test builds
+            for each commit and pull request.
 
+      = package_row 'First-party test builds on GitHub Actions',
+                    'https://github.com/mpv-player/mpv/actions/workflows/build.yml?query=event:push+branch:master',
+                    :"cloud-download"
       = package_row 'macOS builds by stolendata', 'https://laboratory.stolendata.net/~djinn/mpv_osx/', :"cloud-download"
       = package_row 'MacPorts', 'https://github.com/macports/macports-ports/blob/master/multimedia/mpv/Portfile'
       = package_row 'Homebrew (without macOS application bundles)', 'https://github.com/Homebrew/homebrew-core/blob/master/Formula/m/mpv.rb'
@@ -64,13 +77,13 @@ title: Installation
             %i.fa.fa-linux
             Linux packages
           %p
-            Distributions usually package outdated, unmaintained, and unsupported versions of mpv. This is especially
-            true for popular distros like Debian and Ubuntu. You are recommended to use
-            mpv-build or third-party packages instead. All of these packages are unofficial.
+            Distributions usually package outdated, unmaintained, and unsupported versions of mpv.
+            This is especially true for popular distributions like Debian and Ubuntu.
+            It is recommended to use mpv-build or third-party packages instead.
+            All of these packages are unofficial.
 
       = package_row 'Arch (official package)', 'https://archlinux.org/packages/extra/x86_64/mpv/'
       = package_row 'Gentoo (official package)', 'https://packages.gentoo.org/packages/media-video/mpv'
-
       = package_row 'Arch (AUR, git package)', 'https://aur.archlinux.org/packages/mpv-git/'
       = package_row 'Arch (AUR, mpv-build package)', 'https://aur.archlinux.org/packages/mpv-build-git/'
       = package_row 'Debian multimedia', 'https://deb-multimedia.org/dists/testing/main/binary-amd64/package/mpv'
@@ -91,7 +104,7 @@ title: Installation
 
       = package_row 'FreeBSD (Freshports)', 'https://www.freshports.org/multimedia/mpv'
       = package_row 'NetBSD', 'http://cvsweb.netbsd.org/bsdweb.cgi/pkgsrc/multimedia/mpv/'
-      = package_row 'OpenBSD', 'http://cvsweb.openbsd.org/cgi-bin/cvsweb/ports/multimedia/mpv/'
+      = package_row 'OpenBSD', 'https://cvsweb.openbsd.org/cgi-bin/cvsweb/ports/multimedia/mpv/'
 
 .next-steps
   .container
