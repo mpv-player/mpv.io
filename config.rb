@@ -2,6 +2,8 @@ activate :automatic_image_sizes
 activate :directory_indexes
 activate :livereload
 
+config[:sass_assets_paths] << Bootstrap.stylesheets_path
+
 helpers do
   def installation_path
     "/installation"
