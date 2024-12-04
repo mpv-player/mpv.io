@@ -128,7 +128,6 @@ DEPENDENCIES
   haml (>= 4.0.5, < 6.0)
   middleman (~> 4.1)
   middleman-livereload (>= 3.4)
-  webrick
 
 BUNDLED WITH
    2.2.33
