@@ -32,4 +32,4 @@ copy of the website running on your local machine.
 - ``gem install bundler``
 - ``bundle install``
 - ``bundle exec middleman server``
-- See the website running at: https://localhost:4567/
+- See the website running at: http://localhost:4567/
