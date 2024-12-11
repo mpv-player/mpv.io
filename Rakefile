@@ -7,7 +7,7 @@ end
 
 desc "Builds mpv's manual"
 task :build_mpv_manual do
-  unless File.exists?('mpv')
+  unless File.exist?('mpv')
     system "git clone https://github.com/mpv-player/mpv.git mpv"
   end
   system("cd mpv && git checkout master && git pull origin master")
