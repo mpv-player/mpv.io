@@ -28,7 +28,7 @@ copy of the website running on your local machine.
 
 - Strongly recommended: have ``rbenv`` or ``rvm`` installed. These tools will automatically
   select the correct version of Ruby based on the ``.ruby-version`` file.
-  Alternatively, just install the version in the [.ruby-version file](https://github.com/mpv-player/mpv.io/blob/master/.ruby-version) manually
+  Alternatively you will need to install Ruby 3.x manually.
 - ``gem install bundler``
 - ``bundle install``
 - ``bundle exec middleman server``
