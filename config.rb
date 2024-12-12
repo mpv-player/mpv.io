@@ -1,6 +1,17 @@
 activate :automatic_image_sizes
 activate :directory_indexes
 activate :livereload
+activate :external_pipeline,
+  name: :font_awesome,
+  command: '# Adding Font Awesome assets to source...',
+  source: FontAwesome::Sass.assets_path
+
+activate :external_pipeline,
+  name: :bootstrap,
+  command: '# Adding Bootstrap assets to source...',
+  source: Bootstrap.assets_path
+
+config[:sass_assets_paths] << Bootstrap.stylesheets_path
 
 helpers do
   def installation_path
