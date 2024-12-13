@@ -1,2 +1,0 @@
-//= require zepto
-//= require sticky

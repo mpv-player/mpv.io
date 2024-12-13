@@ -10,7 +10,8 @@
     %title= [ "mpv.io", current_page.data.title ].compact.join(" | ")
 
     = stylesheet_link_tag "all"
-    = javascript_include_tag "all"
+    %script(src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js" integrity="sha512-BrvVYNhKh6yST24E5DY/LopLO5d+8KYmIXyrpBIJ2PK+CyyJw/cLSG/BfJomWLC1IblNrmiJWGlrGueKLd/Ekw==" crossorigin="anonymous" referrerpolicy="no-referrer")
+    = javascript_include_tag "manual"
 
   %body{class: page_classes}
     = partial "layouts/navbar"
