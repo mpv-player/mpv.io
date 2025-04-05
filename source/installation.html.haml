@@ -18,9 +18,9 @@ title: Installation
             %i.fa.fa-windows
             Windows
           %p
-            All binary packages are unofficial third-party builds, except for
-            those directly from mpv-player/mpv, which offers test builds
-            for each commit and pull request.
+            All binary packages are unofficial third-party builds, except as noted.
+            The first-party CI builds are intended mainly for testing and may be
+            missing certain features.
 
       = package_row 'Windows builds by shinchiro (git)',
                     'https://github.com/shinchiro/mpv-winbuild-cmake/releases',
@@ -43,16 +43,16 @@ title: Installation
             %i.fa.fa-apple
             macOS
           %p
-            All binary packages are unofficial third-party builds, except for
-            those directly from mpv-player/mpv, which offers test builds
-            for each commit and pull request.
+            All binary packages are unofficial third-party builds, except as noted.
+            The first-party CI builds are intended mainly for testing and may be
+            missing certain features.
 
       = package_row 'First-party builds by GitHub CI (latest commit)',
                     'https://nightly.link/mpv-player/mpv/workflows/build/master',
                     :"cloud-download"
       = package_row 'macOS builds by stolendata', 'https://laboratory.stolendata.net/~djinn/mpv_osx/', :"cloud-download"
-      = package_row 'MacPorts', 'https://github.com/macports/macports-ports/blob/master/multimedia/mpv/Portfile'
-      = package_row 'Homebrew (without macOS application bundles)', 'https://github.com/Homebrew/homebrew-core/blob/master/Formula/m/mpv.rb'
+      = package_row 'MacPorts', 'https://ports.macports.org/port/mpv/'
+      = package_row 'Homebrew (without application bundles)', 'https://formulae.brew.sh/formula/mpv'
 
       %tr
         %td(colspan="2")
@@ -60,15 +60,14 @@ title: Installation
             %i.fa.fa-terminal
             Source code
           %p
-            If you want bleeding edge functionality, link against git versions
-            of FFmpeg or if a package for your platform is not available or
-            updated, you can build mpv from source code. The helper build
-            scripts are recommended for most users since they perform a static
-            build of FFmpeg and libass as well as mpv.
+            If you want bleeding edge functionality, git versions of FFmpeg
+            or if a package for your platform is unavailable/outdated,
+            you can build mpv from source code. The helper build
+            scripts are recommended for most users since they produce a static
+            build together with FFmpeg, libplacebo and libass.
 
       = package_row 'git repository', 'https://github.com/mpv-player/mpv', :"github-alt"
-      = package_row 'Latest stable release tarball', 'https://github.com/mpv-player/mpv/releases/latest', :"github-alt"
-      = package_row 'Release changelog', 'https://github.com/mpv-player/mpv/releases', :"github-alt"
+      = package_row 'Latest stable release', 'https://github.com/mpv-player/mpv/releases/latest', :"github-alt"
       = package_row 'Helper build scripts for *nix systems', 'https://github.com/mpv-player/mpv-build', :"github-alt"
 
       %tr
@@ -100,11 +99,13 @@ title: Installation
       %tr
         %td(colspan="2")
           %h3
+            %i.fa.fa-floppy-o
             Other platforms
 
       = package_row 'FreeBSD (Freshports)', 'https://www.freshports.org/multimedia/mpv'
-      = package_row 'NetBSD', 'http://cvsweb.netbsd.org/bsdweb.cgi/pkgsrc/multimedia/mpv/'
+      = package_row 'NetBSD', 'https://ftp.netbsd.org/pub/pkgsrc/current/pkgsrc/multimedia/mpv/index.html'
       = package_row 'OpenBSD', 'https://cvsweb.openbsd.org/cgi-bin/cvsweb/ports/multimedia/mpv/'
+      = package_row 'Haiku', 'https://depot.haiku-os.org/mpv'
 
 .next-steps
   .container
