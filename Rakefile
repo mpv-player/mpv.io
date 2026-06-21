@@ -20,7 +20,7 @@ task :build_mpv_manual do
     'source/manual/_master.html.erb'
   ].join(' '))
 
-  ver = `git -C mpv tag -l --contains $(git -C mpv rev-list --tags --max-count=1) | tail -1`
+  ver = `git -C mpv tag -l 'v[0-9]*' --sort=-version:refname | head -1`
   File.write("source/manual/_stable_version.html.erb", ver)
   system("git -C mpv checkout #{ver}")
   system([
