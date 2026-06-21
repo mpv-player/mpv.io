@@ -50,10 +50,6 @@ helpers do
     "https://github.com/mpv-player/mpv"
   end
 
-  def twitter_path
-    "https://twitter.com/mpv_player"
-  end
-
   def issues_path
     "https://github.com/mpv-player/mpv/issues"
   end
