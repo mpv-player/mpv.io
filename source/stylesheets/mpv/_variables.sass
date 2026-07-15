@@ -5,14 +5,13 @@ $gray-vlightd:   darken($gray-vlight, 7%)
 $gray-light:     #888
 $gray-dark:      #222
 
-$body-bg-dark:                        $gray-vlight
+$body-bg-dark:                        light-dark($gray-vlight, $gray-dark)
 $body-bg-light:                       white
-$body-bg:                             $body-bg-light
 
 $brand-color:                         $purple-light
 $brand-primary:                       $purple-light
 $text-color-light:                    $body-bg-light
-$text-color:                          #3F3F3F
+$text-color:                          light-dark(#3F3F3F, #EEE)
 
 $jumbotron-color:                     $gray-light
 $jumbotron-bg:                        $gray-dark
@@ -28,7 +27,7 @@ $navbar-inverse-toggle-hover-bg:      $purple-light
 $navbar-inverse-toggle-border-color:  $purple-light
 
 $headings-font-weight:                200
-$headings-color:                      $purple-dark
+$headings-color:                      light-dark($purple-dark, $purple-light)
 
 $grid-gutter-width:                   30px
 $container-large-desktop:             ((998px + $grid-gutter-width))
